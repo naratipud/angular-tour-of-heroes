@@ -29,10 +29,10 @@ export class HeroService {
   }
 
   create(name: String): Promise<Hero> {
-    return this.http.post(this.heroesUrl, JSON.stringify({name: name}), {headers: this.headers})
-    .toPromise()
-    .then(response => response.json().data as Hero)
-    .catch(this.handleError);
+    return this.http.post(this.heroesUrl, JSON.stringify({ name: name }), { headers: this.headers })
+      .toPromise()
+      .then(response => response.json().data as Hero)
+      .catch(this.handleError);
   }
 
   update(hero: Hero): Promise<Hero> {
@@ -40,6 +40,14 @@ export class HeroService {
     return this.http.put(url, JSON.stringify(hero), { headers: this.headers })
       .toPromise()
       .then(() => hero)
+      .catch(this.handleError);
+  }
+
+  delete(id: Number): Promise<void> {
+    const url = `${this.heroesUrl}/${id}`;
+    return this.http.delete(url, { headers: this.headers })
+      .toPromise()
+      .then(() => null)
       .catch(this.handleError);
   }
 
