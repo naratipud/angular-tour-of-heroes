@@ -1,10 +1,12 @@
-import 'rxjs/add/operator/switchMap';
 import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Location } from '@angular/common';
 
-import { Hero } from '../models/hero';
-import { HeroService } from './../services/hero.service';
+import 'rxjs/add/operator/switchMap';
+
+import { Hero } from '../shared/hero';
+import { HeroService } from '../shared/hero.service';
+
 
 @Component({
   selector: 'app-hero-detail',

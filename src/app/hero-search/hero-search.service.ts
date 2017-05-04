@@ -4,7 +4,7 @@ import { Observable } from 'rxjs/Observable';
 
 import 'rxjs/add/operator/map';
 
-import { Hero } from '../models/hero';
+import { Hero } from '../shared/hero';
 
 @Injectable()
 export class HeroSearchService {
