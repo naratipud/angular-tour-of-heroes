@@ -1,28 +1,41 @@
 # Angular - Tour Of Heroes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.1.
+[![Dependency Status][david-badge]][david-badge-url]
+[![devDependency Status][david-dev-badge]][david-dev-badge-url]
 
-## Development server
+Simple Angular app made with :heart:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Based on
 
-## Code scaffolding
+[Angular 4](https://angular.io/) / [Angular CLI](https://github.com/angular/angular-cli)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+## Getting Started
 
-## Build
+```
+git clone https://github.com/naratipud/angular-tour-of-heroes.git toh
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+cd toh
 
-## Running unit tests
+npm i
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Development server
 
-## Running end-to-end tests
+Runs the TypeScript compiler and launches the app
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+```
+npm start
+```
 
-## Further help
+Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Prerequisites
+
+* [Node.js](https://nodejs.org/en/) 6.9.0 or higher
+
+[david-badge]: https://david-dm.org/naratipud/angular-tour-of-heroes.svg
+[david-badge-url]: https://david-dm.org/naratipud/angular-tour-of-heroes
+[david-dev-badge]: https://david-dm.org/naratipud/angular-tour-of-heroes/dev-status.svg
+[david-dev-badge-url]: https://david-dm.org/naratipud/angular-tour-of-heroes?type=dev
+[npm-badge]: https://img.shields.io/npm/v/@angular/cli.svg
+[npm-badge-url]: https://www.npmjs.com/package/@angular/cli
