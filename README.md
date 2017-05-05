@@ -3,7 +3,7 @@
 [![Dependency Status][david-badge]][david-badge-url]
 [![devDependency Status][david-dev-badge]][david-dev-badge-url]
 
-Simple Angular app made with {{ &#8209; :heart: &#8209; }}
+Simple Angular app made with {{ &nbsp; :heart: &nbsp; }}
 
 ## Based on
 
