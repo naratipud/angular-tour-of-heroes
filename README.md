@@ -37,5 +37,3 @@ Navigate to http://localhost:4200/. The app will automatically reload if you cha
 [david-badge-url]: https://david-dm.org/naratipud/angular-tour-of-heroes
 [david-dev-badge]: https://david-dm.org/naratipud/angular-tour-of-heroes/dev-status.svg
 [david-dev-badge-url]: https://david-dm.org/naratipud/angular-tour-of-heroes?type=dev
-[npm-badge]: https://img.shields.io/npm/v/@angular/cli.svg
-[npm-badge-url]: https://www.npmjs.com/package/@angular/cli
