@@ -28,8 +28,8 @@
   "devDependencies": {
     "@angular/cli": "1.0.1",
     "@angular/compiler-cli": "^4.0.0",
-    "@types/jasmine": "2.5.38",
-    "@types/node": "^6.0.72",
+    "@types/jasmine": "^2.5.47",
+    "@types/node": "^7.0.18",
     "codelyzer": "^3.0.1",
     "jasmine-core": "^2.6.1",
     "jasmine-spec-reporter": "^4.1.0",
