@@ -21,7 +21,7 @@ npm i
 
 ### Development server
 
-Runs the TypeScript compiler and launches the app
+Runs the TypeScript compiler and launches the app:
 
 ```
 npm start
