@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
-import { Observable } from 'rxjs/Observable';
+import { Http, Response } from '@angular/http';
 
+import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/catch';
+import 'rxjs/add/observable/throw';
 
 import { Hero } from '../shared/hero';
 
@@ -13,9 +15,14 @@ export class HeroSearchService {
     private http: Http
   ) { }
 
-  search(term: String): Observable<Hero[]> {
+  search(term: string): Observable<Hero[]> {
     return this.http.get(`app/heroes/?name=${term}`)
-      .map(response => response.json().data as Hero[]);
+      .map(response => response.json().data as Hero[])
+      .catch((error: Response) => {
+          console.error('An friendly error occurred', error);
+          // return Observable.throw(error.message || error);
+          return Observable.throw(error.statusText || error);
+      });
   }
 
 }
