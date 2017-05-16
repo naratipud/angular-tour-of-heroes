@@ -52,11 +52,11 @@ export class HeroService {
       .catch(this.handleError);
   }
 
-  private handleError(error: Response): Promise<Response> {
+  private handleError(error: Response) {
     console.error('An error occurred', error); // for demo purposes only
     console.log('Error status: [', error.status, '] / status text: [', error.statusText, ']');
     // return Promise.reject(error.message || error);
-    return Promise.reject(error);
+    return Promise.reject<Response>(error);
   }
 
 }

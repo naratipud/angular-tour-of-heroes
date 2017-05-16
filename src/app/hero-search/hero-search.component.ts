@@ -39,7 +39,7 @@ export class HeroSearchComponent implements OnInit {
         : Observable.of<Hero[]>([]))
       .catch(error => {
         // TODO: add real error handling
-        console.log(error);
+        console.log(`Error in component ... ${error}`);
         return Observable.of<Hero[]>([]);
       });
   }
