@@ -21,7 +21,7 @@ export class HeroSearchService {
       .catch((error: Response) => {
           console.error('An friendly error occurred', error);
           // return Observable.throw(error.message || error);
-          return Observable.throw(error.statusText || error);
+          return Observable.throw(error.json().error || error);
       });
   }
 

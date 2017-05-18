@@ -6,7 +6,7 @@ import { Subject } from 'rxjs/Subject';
 // Observable class extensions
 import 'rxjs/add/observable/of';
 // Observable operators
-import 'rxjs/add/operator/catch';
+// import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
 
