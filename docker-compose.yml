@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  angular-tour-of-heroes:
+    image: angular-tour-of-heroes
+    build: .
+    environment:
+      NODE_ENV: production
+    ports:
+      - 4200:4200
