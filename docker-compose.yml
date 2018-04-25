@@ -1,10 +1,14 @@
 version: '2.1'
 
 services:
-  angular-tour-of-heroes:
-    image: angular-tour-of-heroes
+  toh:
+    image: 'toh:0.1.0'
+    container_name: 'toh'
     build: .
-    environment:
-      NODE_ENV: production
+    # environment:
+    #   NODE_ENV: production
     ports:
-      - 4200:4200
+      - '4200:4200'
+    volumes:
+      - './:/toh'
+    command:
